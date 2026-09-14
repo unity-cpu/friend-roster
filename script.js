@@ -64,6 +64,7 @@ document.addEventListener("mousemove", (e) => {
 
 // ── Role styling maps (friend roster) ───────────────────────────────
 const roleMap = {
+  mommy:       { title: "MOMMY",        cssClass: "mommy-title" },
   bestfriends: { title: "BEST FRIENDS", cssClass: "bestfriends-title" },
   coOwner:     { title: "CO OWNER",     cssClass: "co-owner-title" },
   bunnies:     { title: "BUNNIES",      cssClass: "bunnies-title" },
@@ -77,6 +78,7 @@ const roleMap = {
 };
 
 const nameClasses = {
+  mommy: "mommy-name",
   bestfriends: "bestfriends-name",
   coOwner: "co-owner-name",
   bunnies: "bunnies-name",
@@ -90,6 +92,7 @@ const nameClasses = {
 };
 
 const boxClasses = {
+  mommy: "mommy-box",
   bestfriends: "bestfriends-box",
   coOwner: "co-owner-box",
   bunnies: "bunnies-box",
@@ -107,7 +110,7 @@ function buildRoster(allPeople) {
   container.innerHTML = "";
 
   const groups = {
-    bestfriends: [], coOwner: [], bunnies: [], admin: [], skid: [],
+    mommy: [], bestfriends: [], coOwner: [], bunnies: [], admin: [], skid: [],
     larp: [], femboy: [], cuck: [], thecoopers: [], member: [],
   };
 
@@ -117,7 +120,7 @@ function buildRoster(allPeople) {
   });
 
   const order = [
-    "bestfriends", "coOwner", "bunnies", "admin", "skid",
+    "mommy", "bestfriends", "coOwner", "bunnies", "admin", "skid",
     "larp", "femboy", "cuck", "thecoopers", "member",
   ];
 
