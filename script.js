@@ -300,6 +300,12 @@ const EMBEDDED_PEOPLE = [
     "description": "im really gay",
     "pfp": "https://cdn.discordapp.com/avatars/1327394236005355662/e5ded841ea047129ab662e3cbf000fd3.png?size=1024",
     "role": "cuck"
+  },
+  {
+    "name": "ray",
+    "description": "i love my daddy crazy",
+    "pfp": "https://images-ext-1.discordapp.net/external/saRtboCJdHriNmL_t_urVgSEDqlY50JA0XPS274gLG0/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/1519866644191641715/06c884dabc861a04e83b86cf4a52c8e1.png?format=webp&quality=lossless",
+    "role": "femboy"
   }
 ];
 
