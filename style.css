@@ -1,3 +1,4 @@
+```css
 * {
   margin: 0;
   padding: 0;
@@ -109,8 +110,13 @@ body {
 }
 
 @keyframes slide {
-  0% { background-position: 0% 0%; }
-  100% { background-position: -220% 0%; }
+  0% {
+    background-position: 0% 0%;
+  }
+
+  100% {
+    background-position: -220% 0%;
+  }
 }
 
 #landing-text {
@@ -136,12 +142,17 @@ body {
   0%, 100% {
     transform: scale(1);
     opacity: 0.9;
-    text-shadow: 0 0 10px #a855f7, 0 0 20px #7c3aed;
+    text-shadow:
+      0 0 10px #a855f7,
+      0 0 20px #7c3aed;
   }
+
   50% {
     transform: scale(1.07);
     opacity: 1;
-    text-shadow: 0 0 26px #c084fc, 0 0 40px #e9d5ff;
+    text-shadow:
+      0 0 26px #c084fc,
+      0 0 40px #e9d5ff;
   }
 }
 
@@ -151,7 +162,12 @@ body {
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background: radial-gradient(circle, #f5e9ff 0%, #a855f7 45%, transparent 75%);
+  background: radial-gradient(
+    circle,
+    #f5e9ff 0%,
+    #a855f7 45%,
+    transparent 75%
+  );
   box-shadow:
     0 0 18px rgba(168, 85, 247, 0.95),
     0 0 35px rgba(168, 85, 247, 0.7),
@@ -186,6 +202,7 @@ body {
   z-index: 999998;
   animation: bloodFade 1s forwards;
 }
+
 .blood-small {
   position: fixed;
   width: 8px;
@@ -196,6 +213,7 @@ body {
   z-index: 999997;
   animation: bloodFadeSmall 0.8s forwards;
 }
+
 .blood-large {
   position: fixed;
   width: 22px;
@@ -208,16 +226,39 @@ body {
 }
 
 @keyframes bloodFade {
-  0% { opacity: 0.9; transform: scale(0.6); }
-  100% { opacity: 0; transform: scale(2.8); }
+  0% {
+    opacity: 0.9;
+    transform: scale(0.6);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(2.8);
+  }
 }
+
 @keyframes bloodFadeSmall {
-  0% { opacity: 0.8; transform: scale(0.4); }
-  100% { opacity: 0; transform: scale(2.2); }
+  0% {
+    opacity: 0.8;
+    transform: scale(0.4);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(2.2);
+  }
 }
+
 @keyframes bloodFadeLarge {
-  0% { opacity: 0.95; transform: scale(0.5); }
-  100% { opacity: 0; transform: scale(3.2); }
+  0% {
+    opacity: 0.95;
+    transform: scale(0.5);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(3.2);
+  }
 }
 
 .title {
@@ -229,17 +270,32 @@ body {
   padding: 0 1rem;
   position: relative;
   z-index: 12;
-  background: linear-gradient(135deg, #a855f7, #e9d5ff, #ffffff, #c084fc, #a855f7);
+  background: linear-gradient(
+    135deg,
+    #a855f7,
+    #e9d5ff,
+    #ffffff,
+    #c084fc,
+    #a855f7
+  );
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  filter: drop-shadow(0 0 18px rgba(168, 85, 247, 0.8)) drop-shadow(0 0 35px rgba(192, 132, 252, 0.5));
+  filter:
+    drop-shadow(0 0 18px rgba(168, 85, 247, 0.8))
+    drop-shadow(0 0 35px rgba(192, 132, 252, 0.5));
   animation: titleShine 4s linear infinite;
 }
+
 @keyframes titleShine {
-  0% { background-position: 0% center; }
-  100% { background-position: 200% center; }
+  0% {
+    background-position: 0% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
 }
 
 .container {
@@ -272,20 +328,113 @@ body {
 }
 
 
-.bestfriends-title { color: #ff79e6; text-shadow: 0 0 8px #ff44cc, 0 0 16px #a855f7; border-color: #ff79e6; }
-.bestfriends-name { color: #ff79e6; text-shadow: 0 0 4px #ff44cc; }
-.bestfriends-box { border-left: 5px solid #ff79e6; }
+/* ─────────────────────────────────────────
+   MOMMY
+   ───────────────────────────────────────── */
 
-.owner-title { color: #ff4fd8; text-shadow: 0 0 6px #ff66ff; border-color: #ff4fd8; }
-.co-owner-title { color: #ffd966; text-shadow: 0 0 6px #ffaa33; border-color: #ffcc44; }
-.admin-title { color: #4fa3ff; text-shadow: 0 0 6px #2a6eff; border-color: #4fa3ff; }
-.skid-title { color: #9df6b8; text-shadow: 0 0 6px #9df6b8; border-color: #9df6b8; }
-.member-title { color: #ffffff; text-shadow: 0 0 5px #aaa; border-color: #3a3a3a; }
-.bunnies-title { color: #dfa1f1; text-shadow: 0 0 6px #dfa1f1; border-color: #dfa1f1; }
-.larp-title { color: #c084fc; text-shadow: 0 0 6px #a855f7; border-color: #a855f7; }
-.cuck-title { color: #4400ff; text-shadow: 0 0 6px #4400ff; border-color: #4400ff; }
-.femboy-title { color: #9db9f6; text-shadow: 0 0 6px #9db9f6; border-color: #9db9f6; }
-.thecoopers-title { color: #f6d29d; text-shadow: 0 0 6px #f6d29d; border-color: #f6d29d; }
+.mommy-title {
+  color: #ff69b4;
+  text-shadow:
+    0 0 8px #ff1493,
+    0 0 16px #ff69b4;
+  border-color: #ff69b4;
+}
+
+.mommy-name {
+  color: #ff69b4;
+  text-shadow: 0 0 4px #ff1493;
+}
+
+.mommy-box {
+  border-left: 5px solid #ff69b4;
+}
+
+
+/* ─────────────────────────────────────────
+   BEST FRIENDS
+   ───────────────────────────────────────── */
+
+.bestfriends-title {
+  color: #ff79e6;
+  text-shadow:
+    0 0 8px #ff44cc,
+    0 0 16px #a855f7;
+  border-color: #ff79e6;
+}
+
+.bestfriends-name {
+  color: #ff79e6;
+  text-shadow: 0 0 4px #ff44cc;
+}
+
+.bestfriends-box {
+  border-left: 5px solid #ff79e6;
+}
+
+
+/* ─────────────────────────────────────────
+   OTHER ROLES
+   ───────────────────────────────────────── */
+
+.owner-title {
+  color: #ff4fd8;
+  text-shadow: 0 0 6px #ff66ff;
+  border-color: #ff4fd8;
+}
+
+.co-owner-title {
+  color: #ffd966;
+  text-shadow: 0 0 6px #ffaa33;
+  border-color: #ffcc44;
+}
+
+.admin-title {
+  color: #4fa3ff;
+  text-shadow: 0 0 6px #2a6eff;
+  border-color: #4fa3ff;
+}
+
+.skid-title {
+  color: #9df6b8;
+  text-shadow: 0 0 6px #9df6b8;
+  border-color: #9df6b8;
+}
+
+.member-title {
+  color: #ffffff;
+  text-shadow: 0 0 5px #aaa;
+  border-color: #3a3a3a;
+}
+
+.bunnies-title {
+  color: #dfa1f1;
+  text-shadow: 0 0 6px #dfa1f1;
+  border-color: #dfa1f1;
+}
+
+.larp-title {
+  color: #c084fc;
+  text-shadow: 0 0 6px #a855f7;
+  border-color: #a855f7;
+}
+
+.cuck-title {
+  color: #4400ff;
+  text-shadow: 0 0 6px #4400ff;
+  border-color: #4400ff;
+}
+
+.femboy-title {
+  color: #9db9f6;
+  text-shadow: 0 0 6px #9db9f6;
+  border-color: #9db9f6;
+}
+
+.thecoopers-title {
+  color: #f6d29d;
+  text-shadow: 0 0 6px #f6d29d;
+  border-color: #f6d29d;
+}
 
 .grid {
   display: flex;
@@ -342,41 +491,138 @@ body {
   font-family: monospace;
 }
 
-.owner-name { color: #ff79e6; text-shadow: 0 0 2px #ff44cc; }
-.co-owner-name { color: #ffdd88; font-weight: 800; text-shadow: 0 0 2px #ffaa33; }
-.admin-name { color: #6aaeff; text-shadow: 0 0 2px #6aaeff; }
-.member-name { color: #f0f0f0; text-shadow: 0 0 2px #f0f0f0; }
-.skid-name { color: #9df6b8; text-shadow: 0 0 2px #9df6b8; }
-.bunnies-name { color: #dfa1f1; text-shadow: 0 0 2px #dfa1f1; }
-.larp-name { color: #c084fc; text-shadow: 0 0 2px #a855f7; }
-.cuck-name { color: #4400ff; text-shadow: 0 0 2px #4400ff; }
-.femboy-name { color: #9db9f6; text-shadow: 0 0 2px #9db9f6; }
-.thecoopers-name { color: #f6d29d; text-shadow: 0 0 2px #f6d29d; }
+.owner-name {
+  color: #ff79e6;
+  text-shadow: 0 0 2px #ff44cc;
+}
 
-.owner-box { border-left: 5px solid #ff4fd8; }
-.co-owner-box { border-left: 5px solid #ffcc44; }
-.admin-box { border-left: 5px solid #4fa3ff; }
-.skid-box { border-left: 5px solid #9df6b8; }
-.member-box { border-left: 5px solid #aaaaaa; }
-.bunnies-box { border-left: 5px solid #dfa1f1; }
-.larp-box { border-left: 5px solid #a855f7; }
-.cuck-box { border-left: 5px solid #4400ff; }
-.femboy-box { border-left: 5px solid #9db9f6; }
-.thecoopers-box { border-left: 5px solid #f6d29d; }
+.co-owner-name {
+  color: #ffdd88;
+  font-weight: 800;
+  text-shadow: 0 0 2px #ffaa33;
+}
+
+.admin-name {
+  color: #6aaeff;
+  text-shadow: 0 0 2px #6aaeff;
+}
+
+.member-name {
+  color: #f0f0f0;
+  text-shadow: 0 0 2px #f0f0f0;
+}
+
+.skid-name {
+  color: #9df6b8;
+  text-shadow: 0 0 2px #9df6b8;
+}
+
+.bunnies-name {
+  color: #dfa1f1;
+  text-shadow: 0 0 2px #dfa1f1;
+}
+
+.larp-name {
+  color: #c084fc;
+  text-shadow: 0 0 2px #a855f7;
+}
+
+.cuck-name {
+  color: #4400ff;
+  text-shadow: 0 0 2px #4400ff;
+}
+
+.femboy-name {
+  color: #9db9f6;
+  text-shadow: 0 0 2px #9db9f6;
+}
+
+.thecoopers-name {
+  color: #f6d29d;
+  text-shadow: 0 0 2px #f6d29d;
+}
+
+.owner-box {
+  border-left: 5px solid #ff4fd8;
+}
+
+.co-owner-box {
+  border-left: 5px solid #ffcc44;
+}
+
+.admin-box {
+  border-left: 5px solid #4fa3ff;
+}
+
+.skid-box {
+  border-left: 5px solid #9df6b8;
+}
+
+.member-box {
+  border-left: 5px solid #aaaaaa;
+}
+
+.bunnies-box {
+  border-left: 5px solid #dfa1f1;
+}
+
+.larp-box {
+  border-left: 5px solid #a855f7;
+}
+
+.cuck-box {
+  border-left: 5px solid #4400ff;
+}
+
+.femboy-box {
+  border-left: 5px solid #9db9f6;
+}
+
+.thecoopers-box {
+  border-left: 5px solid #f6d29d;
+}
 
 @media (max-width: 640px) {
-  .avatar { width: 52px; height: 52px; }
-  .person-container { padding: 0.6rem 1rem; gap: 1rem; }
-  .name { font-size: 0.95rem; }
-  .section-title { font-size: 1.2rem; }
-  .ascii-art { font-size: 8px; }
-  .ascii-wrapper { max-width: 95%; }
+  .avatar {
+    width: 52px;
+    height: 52px;
+  }
+
+  .person-container {
+    padding: 0.6rem 1rem;
+    gap: 1rem;
+  }
+
+  .name {
+    font-size: 0.95rem;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+  }
+
+  .ascii-art {
+    font-size: 8px;
+  }
+
+  .ascii-wrapper {
+    max-width: 95%;
+  }
 }
 
 @media (min-width: 1024px) {
-  .avatar { width: 66px; height: 66px; }
-  .person-container { padding: 0.8rem 1.5rem; }
-  .ascii-art { font-size: 15px; }
+  .avatar {
+    width: 66px;
+    height: 66px;
+  }
+
+  .person-container {
+    padding: 0.8rem 1.5rem;
+  }
+
+  .ascii-art {
+    font-size: 15px;
+  }
 }
 
 .fade-out {
@@ -391,7 +637,8 @@ body {
   }
 }
 
-body, html {
+body,
+html {
   width: 100%;
   height: 100%;
 }
