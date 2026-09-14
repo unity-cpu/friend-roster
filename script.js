@@ -306,6 +306,12 @@ const EMBEDDED_PEOPLE = [
     "description": "i love my daddy crazy",
     "pfp": "https://images-ext-1.discordapp.net/external/saRtboCJdHriNmL_t_urVgSEDqlY50JA0XPS274gLG0/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/1519866644191641715/06c884dabc861a04e83b86cf4a52c8e1.png?format=webp&quality=lossless",
     "role": "femboy"
+  },
+  {
+    "name": "makilah",
+    "description": "aww so cute",
+    "pfp": "https://media.discordapp.net/attachments/1495496451533312122/1540774079051604112/IMG_6883.png?ex=6aa82e2e&is=6aa6dcae&hm=3141b353d5b825a2eaaded4da49d90a6fbf02770c82f17d234a6dceb5c4814eb&=&format=webp&quality=lossless",
+    "role": "mommy"
   }
 ];
 
