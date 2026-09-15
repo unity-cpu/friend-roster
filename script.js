@@ -65,7 +65,7 @@ document.addEventListener("mousemove", (e) => {
 // ── Role styling maps (friend roster) ───────────────────────────────
 const roleMap = {
   mommy:       { title: "MOMMY",        cssClass: "mommy-title" },
-  bestfriends: { title: "BEST FRIENDS", cssClass: "bestfriends-title" },
+  harmful:     { title: "HARMFUL",      cssClass: "harmful-title" },
   coOwner:     { title: "CO OWNER",     cssClass: "co-owner-title" },
   bunnies:     { title: "BUNNIES",      cssClass: "bunnies-title" },
   admin:       { title: "ADMIN",        cssClass: "admin-title" },
@@ -79,7 +79,7 @@ const roleMap = {
 
 const nameClasses = {
   mommy: "mommy-name",
-  bestfriends: "bestfriends-name",
+  harmful: "harmful-name",
   coOwner: "co-owner-name",
   bunnies: "bunnies-name",
   admin: "admin-name",
@@ -93,7 +93,7 @@ const nameClasses = {
 
 const boxClasses = {
   mommy: "mommy-box",
-  bestfriends: "bestfriends-box",
+  harmful: "harmful-box",
   coOwner: "co-owner-box",
   bunnies: "bunnies-box",
   admin: "admin-box",
@@ -110,7 +110,7 @@ function buildRoster(allPeople) {
   container.innerHTML = "";
 
   const groups = {
-    mommy: [], bestfriends: [], coOwner: [], bunnies: [], admin: [], skid: [],
+    mommy: [], harmful: [], coOwner: [], bunnies: [], admin: [], skid: [],
     larp: [], femboy: [], cuck: [], thecoopers: [], member: [],
   };
 
@@ -120,7 +120,7 @@ function buildRoster(allPeople) {
   });
 
   const order = [
-    "mommy", "bestfriends", "coOwner", "bunnies", "admin", "skid",
+    "mommy", "harmful", "coOwner", "bunnies", "admin", "skid",
     "larp", "femboy", "cuck", "thecoopers", "member",
   ];
 
@@ -281,13 +281,13 @@ const EMBEDDED_PEOPLE = [
     "name": "unity",
     "description": "we harmful modders :>",
     "pfp": "https://media.discordapp.net/attachments/1522725378626552012/1548866772931977277/34ece49e88aa4bd28924d0e65497f9e1.png?ex=6aa89e17&is=6aa74c97&hm=8a8d22e5535f3ee18af992024f46daee0de997bd1c89e67b27921fad03ab7af3&=&format=webp&quality=lossless",
-    "role": "bestfriends"
+    "role": "harmful"
   },
   {
     "name": "gaybez",
     "description": "im super gay :>>",
     "pfp": "https://media.discordapp.net/attachments/1522725378626552012/1548867289137291294/382EFBBD-5443-45EA-9726-E9EA79F8894D.png?ex=6aa89e92&is=6aa74d12&hm=21231aada9996cb7fc53b4606193725b6cd345ca474a0858556b0da4e4e4f64e&=&format=webp&quality=lossless",
-    "role": "bestfriends"
+    "role": "femboy"
   },
   {
     "name": "syri",
@@ -307,12 +307,6 @@ const EMBEDDED_PEOPLE = [
     "pfp": "https://images-ext-1.discordapp.net/external/saRtboCJdHriNmL_t_urVgSEDqlY50JA0XPS274gLG0/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/1519866644191641715/06c884dabc861a04e83b86cf4a52c8e1.png?format=webp&quality=lossless",
     "role": "femboy"
   },
-  {
-    "name": "makilah",
-    "description": "aww so cute",
-    "pfp": "https://media.discordapp.net/attachments/1495496451533312122/1540774079051604112/IMG_6883.png?ex=6aa82e2e&is=6aa6dcae&hm=3141b353d5b825a2eaaded4da49d90a6fbf02770c82f17d234a6dceb5c4814eb&=&format=webp&quality=lossless",
-    "role": "mommy"
-  }
 ];
 
 function mapPeople(list) {
